@@ -9,4 +9,5 @@ class zulip_ops::profile::chat_zulip_org {
   zulip_ops::firewall_allow { 'http': }
   zulip_ops::firewall_allow { 'https': }
   zulip_ops::firewall_allow { 'smtp': }
+  zulip_ops::firewall_allow { 'grok_exporter': port => '9144' }
 }
